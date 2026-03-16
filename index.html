@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedVista Clinic — Book Your Appointment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ─── NAVBAR ───────────────────────────────────────────────── -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-cross">✚</span>
+        <span>Med<strong>Vista</strong></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#doctors">Our Team</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-cta" id="navBookBtn">Book Now</button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#services">Services</a>
+      <a href="#doctors">Our Team</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button class="nav-cta" id="mobileBookBtn">Book Appointment</button>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─────────────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+
+    <div class="hero-inner">
+      <!-- Left text column -->
+      <div class="hero-text">
+        <div class="pill-badge">🏥 &nbsp;Trusted Since 2004 · 20+ Years</div>
+        <h1 class="hero-h1">
+          Modern care<br>
+          <span class="ital-accent">tailored</span>
+          for you.
+        </h1>
+        <p class="hero-sub">
+          From routine checkups to specialist consultations — 
+          MedVista brings clinical excellence and compassionate care 
+          under one roof.
+        </p>
+        <div class="hero-actions">
+          <button class="btn-primary" id="heroBookBtn">
+            <span class="btn-icon">📅</span> Book Appointment
+          </button>
+          <a href="#services" class="btn-ghost">Explore Services →</a>
+        </div>
+        <div class="trust-strip">
+          <div class="trust-item"><span class="t-num">12 k+</span><span class="t-label">patients</span></div>
+          <div class="trust-sep"></div>
+          <div class="trust-item"><span class="t-num">48</span><span class="t-label">specialists</span></div>
+          <div class="trust-sep"></div>
+          <div class="trust-item"><span class="t-num">4.9 ★</span><span class="t-label">avg rating</span></div>
+        </div>
+      </div>
+
+      <!-- Right 3D card column -->
+      <div class="hero-cards" id="heroCards">
+        <!-- main card -->
+        <div class="hcard hcard-main" id="mainCard">
+          <div class="hcard-top">
+            <div class="hcard-avatar">
+              <span>🧑‍⚕️</span>
+            </div>
+            <div class="hcard-badge-live"><span class="dot-live"></span>2 nurses on duty</div>
+          </div>
+          <h3 class="hcard-name">Dr. Stella Reyes</h3>
+          <p class="hcard-role">Senior General Practitioner</p>
+          <div class="hcard-stats">
+            <div class="hstat"><span class="hstat-v">98%</span><span class="hstat-k">satisfaction</span></div>
+            <div class="hstat"><span class="hstat-v">14yr</span><span class="hstat-k">experience</span></div>
+            <div class="hstat"><span class="hstat-v">Mon–Sat</span><span class="hstat-k">availability</span></div>
+          </div>
+          <button class="hcard-btn" id="hCardBookBtn">
+            Book a check-up <span>→</span>
+          </button>
+        </div>
+
+        <!-- floating accent cards -->
+        <div class="hcard hcard-float hcard-f1">
+          <span class="fcard-icon">🫀</span>
+          <div class="fcard-label">Cardiology</div>
+          <div class="fcard-sub">Next: Tue 9 am</div>
+        </div>
+        <div class="hcard hcard-float hcard-f2">
+          <span class="fcard-icon">🧪</span>
+          <div class="fcard-label">Lab Tests</div>
+          <div class="fcard-sub">Results in 24h</div>
+        </div>
+        <div class="hcard hcard-float hcard-f3">
+          <span class="fcard-icon">🧘</span>
+          <div class="fcard-label">Wellness</div>
+          <div class="fcard-sub">Room 105</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SERVICES ─────────────────────────────────────────────── -->
+  <section class="section services-section" id="services">
+    <div class="section-inner">
+      <div class="section-label">Our Services</div>
+      <h2 class="section-h2">Comprehensive care<br><span class="ital-accent">at every stage.</span></h2>
+      <div class="services-grid">
+        <div class="service-card sc-teal">
+          <div class="sc-icon">🩺</div>
+          <h3>General Medicine</h3>
+          <p>Complete primary care — from diagnosis and treatment to ongoing health management and preventive care.</p>
+          <a href="#" class="sc-link">Learn more →</a>
+        </div>
+        <div class="service-card sc-mint">
+          <div class="sc-icon">🧠</div>
+          <h3>Mental Health</h3>
+          <p>Confidential therapy sessions, psychiatric evaluations, and wellness programs designed for your mind.</p>
+          <a href="#" class="sc-link">Learn more →</a>
+        </div>
+        <div class="service-card sc-sky">
+          <div class="sc-icon">🫁</div>
+          <h3>Respiratory Care</h3>
+          <p>Pulmonary function testing, asthma management, and allergy screenings with our certified specialists.</p>
+          <a href="#" class="sc-link">Learn more →</a>
+        </div>
+        <div class="service-card sc-lavender">
+          <div class="sc-icon">🍼</div>
+          <h3>Pediatrics</h3>
+          <p>Gentle, child-friendly examinations, vaccinations, and developmental monitoring from birth to 18.</p>
+          <a href="#" class="sc-link">Learn more →</a>
+        </div>
+        <div class="service-card sc-rose">
+          <div class="sc-icon">🦷</div>
+          <h3>Dental Health</h3>
+          <p>Preventive cleanings, restorative work, and cosmetic treatments in our state-of-the-art dental suite.</p>
+          <a href="#" class="sc-link">Learn more →</a>
+        </div>
+        <div class="service-card sc-amber">
+          <div class="sc-icon">🦴</div>
+          <h3>Orthopedics</h3>
+          <p>Joint and muscle care — from sports injuries to chronic pain management and physiotherapy plans.</p>
+          <a href="#" class="sc-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── DOCTORS ───────────────────────────────────────────────── -->
+  <section class="section doctors-section" id="doctors">
+    <div class="section-inner">
+      <div class="section-label">Our Team</div>
+      <h2 class="section-h2">Meet our <span class="ital-accent">specialists.</span></h2>
+      <div class="doctors-grid">
+        <div class="doc-card" data-specialty="General Practitioner">
+          <div class="doc-avatar" style="background: linear-gradient(135deg,#b2f0e8,#7dd3c8)">👩‍⚕️</div>
+          <div class="doc-info">
+            <h4>Dr. Stella Reyes</h4>
+            <span class="doc-role">General Practitioner</span>
+            <div class="doc-meta"><span>⭐ 4.9</span><span>14 yrs exp</span></div>
+            <button class="doc-book-btn book-trigger">Book →</button>
+          </div>
+        </div>
+        <div class="doc-card" data-specialty="Cardiologist">
+          <div class="doc-avatar" style="background: linear-gradient(135deg,#ffd6d6,#ffaab5)">🧑‍⚕️</div>
+          <div class="doc-info">
+            <h4>Dr. Marcus Lim</h4>
+            <span class="doc-role">Cardiologist</span>
+            <div class="doc-meta"><span>⭐ 4.8</span><span>11 yrs exp</span></div>
+            <button class="doc-book-btn book-trigger">Book →</button>
+          </div>
+        </div>
+        <div class="doc-card" data-specialty="Pediatrician">
+          <div class="doc-avatar" style="background: linear-gradient(135deg,#d6eeff,#a3c7ff)">👩‍⚕️</div>
+          <div class="doc-info">
+            <h4>Dr. Yuki Tanaka</h4>
+            <span class="doc-role">Pediatrician</span>
+            <div class="doc-meta"><span>⭐ 5.0</span><span>9 yrs exp</span></div>
+            <button class="doc-book-btn book-trigger">Book →</button>
+          </div>
+        </div>
+        <div class="doc-card" data-specialty="Psychiatrist">
+          <div class="doc-avatar" style="background: linear-gradient(135deg,#e8d6ff,#c4a3ff)">🧑‍⚕️</div>
+          <div class="doc-info">
+            <h4>Dr. Ali Hassan</h4>
+            <span class="doc-role">Psychiatrist</span>
+            <div class="doc-meta"><span>⭐ 4.9</span><span>16 yrs exp</span></div>
+            <button class="doc-book-btn book-trigger">Book →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── WHY US ────────────────────────────────────────────────── -->
+  <section class="section why-section" id="about">
+    <div class="section-inner why-inner">
+      <div class="why-text">
+        <div class="section-label">Why MedVista</div>
+        <h2 class="section-h2">Care that <span class="ital-accent">puts you</span><br>at the centre.</h2>
+        <p class="why-desc">We combine clinical rigour with human warmth — because you deserve both. Our integrated approach means your GP, specialist, and mental health team all collaborate on your care.</p>
+        <ul class="why-list">
+          <li><span class="wl-icon">✅</span> Same-day appointments available</li>
+          <li><span class="wl-icon">✅</span> Encrypted digital health records</li>
+          <li><span class="wl-icon">✅</span> Bulk-billed & private options</li>
+          <li><span class="wl-icon">✅</span> Telehealth consultations</li>
+          <li><span class="wl-icon">✅</span> Multilingual staff on site</li>
+        </ul>
+        <button class="btn-primary book-trigger">Schedule a Visit</button>
+      </div>
+      <div class="why-visual">
+        <div class="wv-card wv-c1">
+          <span class="wv-icon">🕐</span>
+          <div class="wv-label">Open 7 am – 9 pm</div>
+          <div class="wv-sub">Mon – Sun · No holiday closures</div>
+        </div>
+        <div class="wv-card wv-c2">
+          <span class="wv-icon">📱</span>
+          <div class="wv-label">Digital-First</div>
+          <div class="wv-sub">Book, reschedule & view results online</div>
+        </div>
+        <div class="wv-card wv-c3">
+          <span class="wv-icon">🛡️</span>
+          <div class="wv-label">ISO Accredited</div>
+          <div class="wv-sub">Certified clinical standards since 2009</div>
+        </div>
+        <div class="wv-card wv-c4">
+          <span class="wv-icon">💬</span>
+          <div class="wv-label">24/7 Nurse Line</div>
+          <div class="wv-sub">Speak to a nurse any hour, any day</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT STRIP ─────────────────────────────────────────── -->
+  <section class="contact-strip" id="contact">
+    <div class="cs-inner">
+      <div class="cs-item">
+        <span class="cs-icon">📍</span>
+        <div>
+          <div class="cs-title">Location</div>
+          <div class="cs-val">45 Wellness Ave, Suite 12<br>Metro City, MC 10001</div>
+        </div>
+      </div>
+      <div class="cs-divider"></div>
+      <div class="cs-item">
+        <span class="cs-icon">📞</span>
+        <div>
+          <div class="cs-title">Phone</div>
+          <div class="cs-val">+1 (234) 567-8900<br><small>Available 24/7</small></div>
+        </div>
+      </div>
+      <div class="cs-divider"></div>
+      <div class="cs-item">
+        <span class="cs-icon">✉️</span>
+        <div>
+          <div class="cs-title">Email</div>
+          <div class="cs-val">hello@medvista.care<br><small>Reply within 2 hrs</small></div>
+        </div>
+      </div>
+      <div class="cs-divider"></div>
+      <button class="btn-primary book-trigger">Book Appointment</button>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo"><span class="logo-cross">✚</span><span>Med<strong>Vista</strong></span></div>
+        <p>Compassionate care, modern standards.</p>
+      </div>
+      <div class="footer-links">
+        <div class="fl-col"><strong>Clinic</strong><a href="#">About</a><a href="#">Team</a><a href="#">Careers</a></div>
+        <div class="fl-col"><strong>Services</strong><a href="#">General</a><a href="#">Specialist</a><a href="#">Telehealth</a></div>
+        <div class="fl-col"><strong>Help</strong><a href="#">FAQ</a><a href="#">Privacy</a><a href="#">Terms</a></div>
+      </div>
+    </div>
+    <div class="footer-copy">© 2025 MedVista Clinic. All rights reserved.</div>
+  </footer>
+
+  <!-- ─── BOOKING MODAL ─────────────────────────────────────────── -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="bookingModal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-header">
+        <div class="modal-icon">📅</div>
+        <h2 class="modal-title">Book Your Appointment</h2>
+        <p class="modal-sub">Fill in your details and we'll confirm within 30 minutes.</p>
+      </div>
+
+      <div class="modal-form" id="modalForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" id="fName" placeholder="e.g. Maria" />
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" id="lName" placeholder="e.g. Santos" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="fEmail" placeholder="you@email.com" />
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="tel" id="fPhone" placeholder="+1 000 000 0000" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Department</label>
+            <select id="fDept">
+              <option value="">— Select department —</option>
+              <option>General Medicine</option>
+              <option>Mental Health</option>
+              <option>Cardiology</option>
+              <option>Pediatrics</option>
+              <option>Respiratory Care</option>
+              <option>Dental Health</option>
+              <option>Orthopedics</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Preferred Doctor</label>
+            <select id="fDoc">
+              <option value="">— Any available —</option>
+              <option>Dr. Stella Reyes</option>
+              <option>Dr. Marcus Lim</option>
+              <option>Dr. Yuki Tanaka</option>
+              <option>Dr. Ali Hassan</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Preferred Date</label>
+            <input type="date" id="fDate" />
+          </div>
+          <div class="form-group">
+            <label>Preferred Time</label>
+            <select id="fTime">
+              <option value="">— Select time —</option>
+              <option>07:00 AM</option>
+              <option>08:00 AM</option>
+              <option>09:00 AM</option>
+              <option>10:00 AM</option>
+              <option>11:00 AM</option>
+              <option>12:00 PM</option>
+              <option>01:00 PM</option>
+              <option>02:00 PM</option>
+              <option>03:00 PM</option>
+              <option>04:00 PM</option>
+              <option>05:00 PM</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group full-width">
+          <label>Reason for Visit <span class="opt">(optional)</span></label>
+          <textarea id="fReason" rows="3" placeholder="Briefly describe your symptoms or reason for visit…"></textarea>
+        </div>
+        <div class="form-type">
+          <span class="ft-label">Visit type:</span>
+          <label class="ft-opt"><input type="radio" name="vtype" value="in-person" checked /> In-person</label>
+          <label class="ft-opt"><input type="radio" name="vtype" value="telehealth" /> Telehealth</label>
+        </div>
+        <button class="btn-primary btn-submit" id="submitBtn">
+          <span class="btn-icon">✅</span> Confirm Appointment
+        </button>
+      </div>
+
+      <!-- Success state -->
+      <div class="modal-success" id="modalSuccess">
+        <div class="success-anim">✅</div>
+        <h3>Appointment Requested!</h3>
+        <p>We'll send a confirmation to your email within 30 minutes. See you soon!</p>
+        <button class="btn-primary" id="successClose">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
